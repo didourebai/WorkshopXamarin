@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Sample3"
+             x:Class="Sample3.MainPage" Title="Home Page">
+    <ContentPage.Content>
+        <!--<StackLayout Padding="20">
+            <Slider x:Name="mySlider" Minimum="0" Maximum="100" VerticalOptions="CenterAndExpand"></Slider>
+            <Label FontAttributes="Bold" FontSize="20" HorizontalOptions="Center" BindingContext="{x:Reference mySlider}" Text="{Binding Value}"></Label>
+         
+        </StackLayout>-->
+        <StackLayout Padding="20">
+            <Slider x:Name="mySlider" Minimum="0" Maximum="100" VerticalOptions="CenterAndExpand"></Slider>
+            <Label FontAttributes="Bold" FontSize="20" HorizontalOptions="Center" BindingContext="{x:Reference mySlider}" Text="{Binding Value}"></Label>
+            <Label Text="{Binding Prompt}"></Label>
+            <Label Text="{Binding Name}"></Label>
+            <!--<Button x:Name="GotToGridPage" Text="GotToGridPage" Clicked="GotToGridPage_Clicked"></Button>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

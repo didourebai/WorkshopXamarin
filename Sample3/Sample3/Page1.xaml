@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample3.Page1" Title="Page 1">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Grid x:Name="Grid1">
+                <!--Two Rows-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!--Two Columns-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="I am in Left Side" BackgroundColor="Red"
+                       Grid.Row="0" Grid.Column="0">
+                </Label>
+                <Label Text="I am in Right Side " BackgroundColor="Aqua"
+                       Grid.Row="0" Grid.Column="1">
+                </Label>
+                <Label Text="I am in Left Side 1" BackgroundColor="Azure"
+                       Grid.Row="1" Grid.Column="0">
+                </Label>
+                <Label Text="I am in Right Side 1" BackgroundColor="Beige"
+                       Grid.Row="1" Grid.Column="1">
+                </Label>
+            </Grid>
+
+            <Grid x:Name="Grid2">
+                <!--Two Rows-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <!--Two Columns-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="I am in Left Side" BackgroundColor="Red"
+                       Grid.Row="0" Grid.Column="0">
+                </Label>
+                <Label Text="I am in Right Side " BackgroundColor="Aqua"
+                       Grid.Row="0" Grid.Column="1">
+                </Label>
+                <Label Text="I am in Left Side 1" BackgroundColor="Azure"
+                       Grid.Row="1" Grid.Column="0">
+                </Label>
+                <Label Text="I am in Right Side 1" BackgroundColor="Beige"
+                       Grid.Row="1" Grid.Column="1">
+                </Label>
+            </Grid>
+            <!--<Button x:Name="GotToHomePage" Text="GotToGridPage" Clicked="GotToHomePage_Clicked"></Button>-->
+        </StackLayout>
+  
+
+    </ContentPage.Content>
+</ContentPage>
